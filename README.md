@@ -2,6 +2,8 @@
 
 Generative Video Flow — p5.js を録画し、YouTube Shorts 向けに加工するパイプラインです。
 
+**Claude Code で開発する場合** → リポジトリ直下の [`CLAUDE.md`](CLAUDE.md)（セットアップ・作業状況・Handoff）を参照してください。
+
 ## リポジトリ
 
 - https://github.com/hiroshiandailab/gendrop
