@@ -33,7 +33,8 @@ Cursor で push したあと `git clone` → Claude Code で `/init` 相当と�
 
 ```
 gendrop/
-├── CLAUDE.md              ← このファイル（Claude Code 用）
+├── AGENTS.md              ← Codex 用引き継ぎ
+├── CLAUDE.md              ← Claude Code 用引き継ぎ
 ├── README.md              ← ユーザー向け概要
 ├── sketches/              ← p5 作品（001-… 〜 024-… など）
 │   └── <sketch_id>/
@@ -135,14 +136,14 @@ node upload.js 001-ma-26039 3
 - **Secrets / トークンをコミットしない**（`automation/.gitignore` 参照）。
 - **スケッチ追加**: `sketches/NNN-id/` に `index.html`, `sketch.js`, `meta.json`。
 - **コミット**: ユーザーが明示したときのみ（Cursor / Claude Code 共通）。
-- **push 後**: 本ファイルの **作業状況** を更新してから push すると、ツール切り替えがスムーズ。
+- **push 後**: **AGENTS.md** と **CLAUDE.md** の **作業状況** を同期更新してから push すると、Cursor / Claude Code / Codex の切り替えがスムーズ。
 - 図解レポート（Surge）は **別ディレクトリ**（`hiroshi-tsutsumi-202604-gendrop`）— 本リポジトリ外。仕様変更時はそちらも手動デプロイ。
 
 ---
 
 ## 作業状況（Handoff）
 
-> **更新ルール**: Cursor または Claude Code で作業を終えるたびに、日付・担当・次の TODO を追記する。
+> **更新ルール**: Cursor / Claude Code / Codex で作業を終えるたびに、**CLAUDE.md と AGENTS.md の両方**の作業状況を同期更新する。
 
 ### 最終更新: 2026-05-08
 
@@ -155,6 +156,7 @@ node upload.js 001-ma-26039 3
 | ローテーション | ⚠️ `state.json` cursor=1。日次録画廃止のため **Record 成功時は advance しない** |
 | verify-all | ✅ 新 record/process に追従済み |
 | 図解 Surge | ✅ 仕様変更・変更理由・画像3枚反映済み |
+| 引き継ぎ | ✅ AGENTS.md · CLAUDE.md |
 
 ### 次にやること（候補）
 
