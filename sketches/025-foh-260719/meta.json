@@ -1,0 +1,18 @@
+{
+  "title": "FOH-260719",
+  "series": "FOH",
+  "project": "Genmapping",
+  "animation_loop_seconds": 30,
+  "concept": "6枚の花びらと中央円の調和的な構成を保ちながら、前後運動、傾斜、輪郭のねじれ、回転によって平面の花を立体的な運動へ展開する30秒のシームレスループ作品。",
+  "techniques": [
+    "p5.js",
+    "WEBGL",
+    "generative animation",
+    "radial geometry",
+    "3D camera movement",
+    "layered line rendering",
+    "phase-shifted petal motion",
+    "seamless loop"
+  ],
+  "mood": "調和的・立体的・躍動的"
+}
